@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 
 import ejemplo.persistencia_s4.model.Banda;
 import ejemplo.persistencia_s4.repository.BandaRepository;
+import jakarta.transaction.Transactional;
 
 @Service
+@Transactional
 public class BandaService {
     @Autowired
     private BandaRepository bandaRepository;
